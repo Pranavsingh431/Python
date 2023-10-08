@@ -8,12 +8,12 @@ def encrypt(input_string: str, key: int, alphabet: str | None = None) -> str:
     encrypt
     =======
     Encodes a given string with the caesar cipher and returns the encoded
-    message
+    message.
 
     Parameters:
     -----------
-    *   input_string: the plain-text that needs to be encoded
-    *   key: the number of letters to shift the message by
+    *   input_string: the plain-text that needs to be encoded.
+    *   key: the number of letters to shift the message by.
 
     Optional:
     *   alphabet (None): the alphabet used to encode the cipher, if not
@@ -21,7 +21,7 @@ def encrypt(input_string: str, key: int, alphabet: str | None = None) -> str:
         letters is used
 
     Returns:
-    *   A string containing the encoded cipher-text
+    *   A string containing the encoded cipher-text.
 
     More on the caesar cipher
     =========================
@@ -46,11 +46,11 @@ def encrypt(input_string: str, key: int, alphabet: str | None = None) -> str:
 
     Our final message would be "Jgnnq, ecrvckp"
 
-    Further reading
+    Further reading:
     ===============
     *   https://en.m.wikipedia.org/wiki/Caesar_cipher
 
-    Doctests
+    Doctests:
     ========
     >>> encrypt('The quick brown fox jumps over the lazy dog', 8)
     'bpm yCqks jzwEv nwF rCuxA wDmz Bpm tiHG lwo'
@@ -83,7 +83,7 @@ def encrypt(input_string: str, key: int, alphabet: str | None = None) -> str:
 
 def decrypt(input_string: str, key: int, alphabet: str | None = None) -> str:
     """
-    decrypt
+    decrypt:
     =======
     Decodes a given string of cipher-text and returns the decoded plain-text
 
@@ -100,7 +100,7 @@ def decrypt(input_string: str, key: int, alphabet: str | None = None) -> str:
     Returns:
     *   A string containing the decoded plain-text
 
-    More on the caesar cipher
+    More on the caesar cipher:
     =========================
     The caesar cipher is named after Julius Caesar who used it when sending
     secret military messages to his troops. This is a simple substitution cipher
@@ -125,11 +125,11 @@ def decrypt(input_string: str, key: int, alphabet: str | None = None) -> str:
 
     Our final message would be "Hello, captain"
 
-    Further reading
+    Further reading:
     ===============
     *   https://en.m.wikipedia.org/wiki/Caesar_cipher
 
-    Doctests
+    Doctests:
     ========
     >>> decrypt('bpm yCqks jzwEv nwF rCuxA wDmz Bpm tiHG lwo', 8)
     'The quick brown fox jumps over the lazy dog'
